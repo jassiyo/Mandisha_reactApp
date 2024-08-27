@@ -1,0 +1,153 @@
+/* Container for the entire Programs section */
+.programs-container {
+    padding: 60px 20px;
+    background-color: #f9f9fb;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Programs Overview Section */
+  .programs-overview {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .programs-overview p {
+    font-size: 18px;
+    color: #7f8c8d;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Main Program Section */
+  .programs {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .program {
+    position: relative;
+    flex: 1 1 320px;
+    margin: 15px 10px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .program:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .program img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.4s ease;
+  }
+  
+  .program img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Caption Styling */
+  .caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .icon {
+    font-size: 28px;
+    color: #2980b9;
+  }
+  
+  .caption p {
+    font-size: 20px;
+    margin-left: 12px;
+    font-weight: 500;
+    color: #2c3e50;
+  }
+  
+  /* Programs Impact Section */
+  .programs-impact {
+    text-align: center;
+    margin-top: 60px;
+  }
+  
+  .impact-img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .programs-impact h4 {
+    font-size: 26px;
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .programs-impact p {
+    font-size: 18px;
+    color: #7f8c8d;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 900px) {
+    .programs {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .program {
+      width: 100%;
+      max-width: 400px;
+      margin: 20px 0;
+    }
+  
+    .caption {
+      bottom: 15px;
+      left: 15px;
+      padding: 8px 16px;
+    }
+  
+    .impact-img {
+      width: 100%;
+      max-width: 600px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .programs-overview p {
+      font-size: 16px;
+    }
+  
+    .caption p {
+      font-size: 18px;
+    }
+  
+    .programs-impact h4 {
+      font-size: 22px;
+    }
+  
+    .programs-impact p {
+      font-size: 16px;
+    }
+  
+    .impact-img {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+  

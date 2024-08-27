@@ -1,0 +1,99 @@
+nav {
+    width: 100%;
+    background: #212ea0;
+    color: white;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo styling */
+.nav-logo {
+    height: 3rem;
+    width: 3rem;
+}
+
+/* Navigation menu styling */
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Navigation list items styling */
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+/* Navigation links styling */
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f0f0f5;
+}
+
+/* Burger menu styling */
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 0.5rem;
+}
+
+/* Burger menu icon lines */
+.burger-menu div {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    /* Hide the navigation menu items */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #212ea0;
+    }
+
+    /* Show burger menu */
+    .burger-menu {
+        display: block;
+    }
+
+    /* Show the navigation menu items when burger menu is clicked */
+    .nav-active ul {
+        display: flex;
+    }
+
+    /* Adjusted navigation menu item styling for mobile */
+    nav ul li {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    /* Adjusted logo size for mobile */
+    .nav-logo {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+}
